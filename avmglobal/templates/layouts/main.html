@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVM Global</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Seeta Ram</h1>
+    {% include 'inc/header.html' %}
+    {% include 'inc/sidebar.html' %}
+    {% block contant %}
+
+
+
+    {% endblock contant %}
+    {% include 'inc/footer.html' %}
 </body>
 </html>
