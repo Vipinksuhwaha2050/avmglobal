@@ -4,6 +4,6 @@ from .import views
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('', views.dashboard, name='dashboard'),
-    path('login', views.login, name='login'),
+    #path('', views.dashboard, name='dashboard'),
+    path('', views.login, name='login'),
 ]
