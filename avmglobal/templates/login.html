@@ -23,16 +23,16 @@
                                 </div>
                         
                                 <p class="text-center">Please sign-in to your account and start the adventure</p>
-                                <form id="formAuthentication" class="mb-3" action="https://avm.tdpvista.com/login" method="POST">
-                                    <input type="hidden" name="_token" value="SHkHQqOeKR2kJISVQgDj096s1HQmy05hq5peLvM0">            
+                                <form class="mb-3" action="#">
+                                
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email ID</label>
                                         <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" id="email" name="email" :value="old('email')" placeholder="Enter your email ID" required="" autofocus="">
                                     </div>
-                                    <div class="mb-3 form-password-toggle">
+                                    <div class="mb-3">
                                         <div class="flex justify-between">
                                             <label class="form-label" for="password">Password</label>
-                                            <a href="https://avm.tdpvista.com/forgot-password">
+                                            <a href="{% url 'dashboard' %}">
                                                 <small>Forgot Password?</small>
                                             </a>
                                         </div>
@@ -52,7 +52,7 @@
                                     <div class="mb-3">
                                     </div>
                                     <div class="mb-3">
-                                        <button class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600 d-grid w-full" type="submit">Sign in</button>
+                                        <button class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600 d-grid w-full" type="submit" href="{% url 'login' %}">Sign in</button>
                                     </div>
                                 </form>
                             </div>
