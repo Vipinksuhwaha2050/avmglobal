@@ -1,0 +1,14 @@
+{% load static %}
+<div class="bg-[#0c2556] h-screen p-5 pt-8 w-64 relative text-white sidenav" id="mySidenav">
+    <div class="w-[18rem] h-16 rounded-full flex">
+        <img src="{% static 'images/icon.png' %}" height="70px" width="70px">
+        <p class="text-xl font-extrabold px-5">AVM Global</p>
+    </div>
+    
+    <span class="cursor-pointer bg-white text-[#0c2556] text-3xl rounded-full absolute -right-3 top-9 border-[#0c2556]" onclick="openNav()"><i class="fa-solid fa-arrow-left" id="aro"></i></span>
+    <div id="overlay" onclick="closeNav()"></div>
+        
+
+</div>
+
+
