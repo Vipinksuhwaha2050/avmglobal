@@ -1,13 +1,31 @@
 {% load static %}
 <div class="bg-[#0c2556] h-screen p-5 pt-8 w-64 relative text-white sidenav" id="mySidenav">
     <div class="w-[18rem] h-16 rounded-full flex">
-        <img src="{% static 'images/icon.png' %}" height="70px" width="70px">
+        <img src="{% static 'images/icon.png' %}" class="origin-left" height="70px" width="70px">
         <p class="text-xl font-extrabold px-5">AVM Global</p>
     </div>
     
     <span class="cursor-pointer bg-white text-[#0c2556] text-3xl rounded-full absolute -right-3 top-9 border-[#0c2556]" onclick="openNav()"><i class="fa-solid fa-arrow-left" id="aro"></i></span>
     <div id="overlay" onclick="closeNav()"></div>
-        
+    
+    <div class="flex">
+        <div class="items-start">
+            <ul class="list-none">
+                <li class="inline-flex">
+                    <a href="https://avm.tdpvista.com/admin" class="svg-icon">
+                        <i class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            <span class="ml-2">Dashboard</span>    
+                        </svg>
+                        
+                    </i>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </div>
 
