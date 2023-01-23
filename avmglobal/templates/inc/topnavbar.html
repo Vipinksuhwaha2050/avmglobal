@@ -1,0 +1,18 @@
+<section class="mx-auto">
+
+{% comment %} <link rel="stylesheet" href="{% static 'css/tailwind.css' %}"> {% endcomment %}
+
+<nav class="bg-gray-800">
+  <div class="container mx-auto flex items-center justify-between px-4 py-3">
+    <div class="flex items-center">
+      <a href="{% url 'dashboard' %}" class="text-white text-lg font-medium">My Site</a>
+    </div>
+    <div class="flex items-center">
+      <a href="{% url 'dashboard' %}" class="text-white mr-4">Home</a>
+      <a href="#" class="text-white mr-4">About</a>
+      <a href="#" class="text-white">Contact</a>
+    </div>
+  </div>
+</nav>
+
+</section>
