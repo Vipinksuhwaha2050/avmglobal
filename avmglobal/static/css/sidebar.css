@@ -1,4 +1,38 @@
-.sidenav {
+
+.sidebar.open {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -37,13 +71,13 @@
 }
 
 #overlay{
-z-index: 2;
+z-index: 20;
 position: fixed;
 height: 100%;
-width: 100%;
+width: 100%; 
 top: 0;
 left: 0;
-display: none;
+display: none; 
 }
 
 @media screen and (max-height: 450px){
@@ -51,4 +85,4 @@ display: none;
     .sidenav{padding-top: 15px;}
     .sidenav a{font-size: 18px;}
 
-}
+} */
