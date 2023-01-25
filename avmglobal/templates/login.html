@@ -1,39 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Login Page</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-gray-200">
-    <div class="container mx-auto p-6">
-      <form class="bg-white p-6 rounded-lg shadow-md">
-        <h2 class="text-lg font-medium mb-4">Login</h2>
-        <div class="mb-4">
-          <label class="block text-gray-700 font-medium mb-2" for="username">
-            Username
-          </label>
-          <input 
-            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
-            id="username" 
-            type="text" 
-            placeholder="Enter your username"
-          >
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 font-medium mb-2" for="password">
-            Password
-          </label>
-          <input 
-            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
-            id="password" 
-            type="password" 
-            placeholder="Enter your password"
-          >
-        </div>
-        <button class="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded-lg">
-          Login
-        </button>
-      </form>
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVM Global | Login</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+<div>
+    <center>
+      <div class="w-full max-w-sm mt-10">
+        <form class=" shadow-md rounded px-8 pt-6 pb-8 mb-4" action="home">
+          <div class=" grid grid-cols-2">
+                <div><img src="../static/image/avm_logo.png" class="bg-transparent w-20"></div>
+                <div>
+                    <p class="text-blue-900 text-xl font-bold text-left -ml-[30px]">| AVM GLOBAL</p>
+                    <p class="text-left -ml-[30px]">Migration and Education</p>
+                    <p class="text-right text-red-500 italic">Absolute Visa Mentors</p>
+                </div>
+          </div>
+          <p class="mt-3 text-left">Please sign-in to your account and start the adventure </p>
+          <div class="mb-4 mt-3">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+              Email-id
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email-id">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+              Password
+            </label>
+            <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+            <p class="text-red-500 text-xs italic">Please choose a password.</p>
+          </div>
+          <div class="flex items-center justify-between">
+            Remember Me<input type="checkbox" class="-ml-10">
+            <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+              Forgot Password?
+            </a>
+          </div>
+          <button class="bg-blue-900 mt-5 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            Sign In
+          </button>
+        </form>
+        <p class="text-center text-gray-500 text-xs">
+          &copy;2023 Acme Corp. All rights reserved.
+        </p>
+      </div>
+    </center>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+
   </body>
 </html>
